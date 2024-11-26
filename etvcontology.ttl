@@ -1,0 +1,156 @@
+@prefix : <http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/> .
+
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco> rdf:type owl:Ontology ;
+                                                     owl:imports <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> ,
+                                                                 <https://w3id.org/icon/ontology/2.1.0/> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#dependsOn
+:dependsOn rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ,
+                    owl:AsymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Interpretation ;
+           rdfs:range :Object .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#hasInterpretation
+:hasInterpretation rdf:type owl:ObjectProperty ,
+                            owl:InverseFunctionalProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain :Object ;
+                   rdfs:range :Interpretation .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#hasOutput
+:hasOutput rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isDefinedBy ;
+           rdf:type owl:FunctionalProperty ,
+                    owl:InverseFunctionalProperty ,
+                    owl:AsymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Interpretation ;
+           rdfs:range :RealWorldObject .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#isDefinedBy
+:isDefinedBy rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ,
+                      owl:InverseFunctionalProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :RealWorldObject ;
+             rdfs:range :Interpretation .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#isMadeBy
+:isMadeBy rdf:type owl:ObjectProperty ;
+          owl:inverseOf :makes ;
+          rdf:type owl:FunctionalProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Object ;
+          rdfs:range :Aspect ,
+                     :CompositionOfAspects .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/makes
+:makes rdf:type owl:ObjectProperty ,
+                owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:TransitiveProperty ,
+                owl:IrreflexiveProperty ;
+       rdfs:domain :Aspect ,
+                   :CompositionOfAspects ;
+       rdfs:range :Object .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/recognizedAspect
+:recognizedAspect rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ,
+                           owl:InverseFunctionalProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain :PerceptionRecognition ;
+                  rdfs:range :Aspect .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/recognizedCompositionOfAspects
+:recognizedCompositionOfAspects rdf:type owl:ObjectProperty ,
+                                         owl:FunctionalProperty ,
+                                         owl:InverseFunctionalProperty ,
+                                         owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
+                                rdfs:domain :PerceptionRecognition ;
+                                rdfs:range :CompositionOfAspects .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#AlienRelatedCharacter
+:AlienRelatedCharacter rdf:type owl:Class ;
+                       rdfs:subClassOf <https://w3id.org/icon/ontology/Character> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#Interpretation
+:Interpretation rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Aspect
+:Aspect rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Color
+:Color rdf:type owl:Class ;
+       rdfs:subClassOf :Aspect .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/CompositionOfAspects
+:CompositionOfAspects rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Object
+:Object rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/PerceptionRecognition
+:PerceptionRecognition rdf:type owl:Class ;
+                       rdfs:subClassOf <https://w3id.org/icon/ontology/Recognition> .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Position
+:Position rdf:type owl:Class ;
+          rdfs:subClassOf :Aspect .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/RealWorldObject
+:RealWorldObject rdf:type owl:Class ;
+                 owl:equivalentClass <https://w3id.org/icon/ontology/NaturalElement> ;
+                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Shape
+:Shape rdf:type owl:Class ;
+       rdfs:subClassOf :Aspect .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Size
+:Size rdf:type owl:Class ;
+      rdfs:subClassOf :Aspect .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
