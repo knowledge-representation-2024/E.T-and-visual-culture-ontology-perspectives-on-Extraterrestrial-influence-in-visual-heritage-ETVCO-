@@ -97,12 +97,21 @@
 #    Classes
 #################################################################
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#AlienRelatedConcept
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter
+:AlienRelatedCharacter rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( <http://iflastandards.info/ns/fr/frbr/frbroo/F38>
+                                                                  :AlienRelatedConcept
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AlienRelatedConcept
 :AlienRelatedConcept rdf:type owl:Class ;
                      rdfs:subClassOf :Concept .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#AlienTechnologicalObject
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject
 :AlienTechnologicalObject rdf:type owl:Class ;
                           owl:equivalentClass [ owl:intersectionOf ( :AlienTechnology
                                                                      :TechnologicalObject
@@ -111,7 +120,7 @@
                                               ] .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#AlienTechnology
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AlienTechnology
 :AlienTechnology rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( :AlienRelatedConcept
                                                             :Technology
@@ -120,59 +129,14 @@
                                      ] .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#AnthropocentrismRelatedConcept
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedConcept
 :AnthropocentrismRelatedConcept rdf:type owl:Class ;
                                 rdfs:subClassOf :Concept .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#ArcheologyRelatedConcept
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/ArcheologyRelatedConcept
 :ArcheologyRelatedConcept rdf:type owl:Class ;
                           rdfs:subClassOf :AnthropocentrismRelatedConcept .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#Concept
-:Concept rdf:type owl:Class .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#HumanoidFigure
-:HumanoidFigure rdf:type owl:Class ;
-                rdfs:subClassOf :RealWorldObject .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#ReligionRelatedConcept
-:ReligionRelatedConcept rdf:type owl:Class ;
-                        rdfs:subClassOf :AnthropocentrismRelatedConcept .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#ReligiousSymbol
-:ReligiousSymbol rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( :ReligionRelatedConcept
-                                                            <https://w3id.org/icon/ontology/Symbol>
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#TechnologicalObject
-:TechnologicalObject rdf:type owl:Class ;
-                     owl:equivalentClass [ owl:intersectionOf ( :Technology
-                                                                :RealWorldObject
-                                                              ) ;
-                                           rdf:type owl:Class
-                                         ] .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#Technology
-:Technology rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter
-:AlienRelatedCharacter rdf:type owl:Class ;
-                       owl:equivalentClass [ owl:intersectionOf ( <http://iflastandards.info/ns/fr/frbr/frbroo/F38>
-                                                                  :AlienRelatedConcept
-                                                                ) ;
-                                             rdf:type owl:Class
-                                           ] .
 
 
 ###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Aspect
@@ -186,6 +150,15 @@
 
 ###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/CompositionOfAspects
 :CompositionOfAspects rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Concept
+:Concept rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/HumanoidFigure
+:HumanoidFigure rdf:type owl:Class ;
+                rdfs:subClassOf :RealWorldObject .
 
 
 ###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Interpretation
@@ -214,6 +187,20 @@
                                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> .
 
 
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/ReligionRelatedConcept
+:ReligionRelatedConcept rdf:type owl:Class ;
+                        rdfs:subClassOf :AnthropocentrismRelatedConcept .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/ReligiousSymbol
+:ReligiousSymbol rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :ReligionRelatedConcept
+                                                            <https://w3id.org/icon/ontology/Symbol>
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] .
+
+
 ###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Shape
 :Shape rdf:type owl:Class ;
        rdfs:subClassOf :Aspect .
@@ -222,6 +209,19 @@
 ###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Size
 :Size rdf:type owl:Class ;
       rdfs:subClassOf :Aspect .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/TechnologicalObject
+:TechnologicalObject rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :RealWorldObject
+                                                                :Technology
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Technology
+:Technology rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
