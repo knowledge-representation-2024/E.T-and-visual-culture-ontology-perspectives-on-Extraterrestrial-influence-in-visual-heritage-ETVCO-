@@ -15,246 +15,243 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/dependsOn
-:dependsOn rdf:type owl:ObjectProperty ,
-                    owl:FunctionalProperty ,
-                    owl:AsymmetricProperty ,
-                    owl:IrreflexiveProperty ;
-           rdfs:domain :Interpretation ;
-           rdfs:range :Object .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/dependsOn
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/dependsOn> rdf:type owl:ObjectProperty ,
+                                                                       owl:FunctionalProperty ,
+                                                                       owl:AsymmetricProperty ,
+                                                                       owl:IrreflexiveProperty ;
+                                                              rdfs:domain <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation> ;
+                                                              rdfs:range <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> .
 
 
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/hasInterpretation
-:hasInterpretation rdf:type owl:ObjectProperty ,
-                            owl:InverseFunctionalProperty ,
-                            owl:AsymmetricProperty ,
-                            owl:IrreflexiveProperty ;
-                   rdfs:domain :Object ;
-                   rdfs:range :Interpretation .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasInterpretation
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasInterpretation> rdf:type owl:ObjectProperty ,
+                                                                               owl:InverseFunctionalProperty ,
+                                                                               owl:AsymmetricProperty ,
+                                                                               owl:IrreflexiveProperty ;
+                                                                      rdfs:domain <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> ;
+                                                                      rdfs:range <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation> .
 
 
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/hasOutput
-:hasOutput rdf:type owl:ObjectProperty ;
-           owl:inverseOf :isDefinedBy ;
-           rdf:type owl:FunctionalProperty ,
-                    owl:InverseFunctionalProperty ,
-                    owl:AsymmetricProperty ,
-                    owl:IrreflexiveProperty ;
-           rdfs:domain :Interpretation ;
-           rdfs:range :RealWorldObject .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasOutput
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasOutput> rdf:type owl:ObjectProperty ;
+                                                              owl:inverseOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/isDefinedBy> ;
+                                                              rdf:type owl:FunctionalProperty ,
+                                                                       owl:InverseFunctionalProperty ,
+                                                                       owl:AsymmetricProperty ,
+                                                                       owl:IrreflexiveProperty ;
+                                                              rdfs:domain <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation> ;
+                                                              rdfs:range <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> .
 
 
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/isDefinedBy
-:isDefinedBy rdf:type owl:ObjectProperty ,
-                      owl:FunctionalProperty ,
-                      owl:InverseFunctionalProperty ,
-                      owl:AsymmetricProperty ,
-                      owl:IrreflexiveProperty ;
-             rdfs:domain :RealWorldObject ;
-             rdfs:range :Interpretation .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/isDefinedBy
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/isDefinedBy> rdf:type owl:ObjectProperty ,
+                                                                         owl:FunctionalProperty ,
+                                                                         owl:InverseFunctionalProperty ,
+                                                                         owl:AsymmetricProperty ,
+                                                                         owl:IrreflexiveProperty ;
+                                                                rdfs:domain <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> ;
+                                                                rdfs:range <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation> .
 
 
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/isMadeBy
-:isMadeBy rdf:type owl:ObjectProperty ;
-          owl:inverseOf :makes ;
-          rdf:type owl:FunctionalProperty ,
-                   owl:InverseFunctionalProperty ,
-                   owl:IrreflexiveProperty ;
-          rdfs:domain :Object ;
-          rdfs:range :Aspect ,
-                     :CompositionOfAspects .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/isMadeBy
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/isMadeBy> rdf:type owl:ObjectProperty ;
+                                                             owl:inverseOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/makes> ;
+                                                             rdf:type owl:FunctionalProperty ,
+                                                                      owl:InverseFunctionalProperty ,
+                                                                      owl:IrreflexiveProperty ;
+                                                             rdfs:domain <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> ;
+                                                             rdfs:range <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect> ,
+                                                                        <http://www.W3C.org/casaz/ontologies/2024/10/etvco/CompositionOfAspects> .
 
 
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/makes
-:makes rdf:type owl:ObjectProperty ,
-                owl:FunctionalProperty ,
-                owl:IrreflexiveProperty ;
-       rdfs:domain :Aspect ,
-                   :CompositionOfAspects ;
-       rdfs:range :Object .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/makes
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/makes> rdf:type owl:ObjectProperty ,
+                                                                   owl:FunctionalProperty ,
+                                                                   owl:IrreflexiveProperty ;
+                                                          rdfs:domain <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect> ,
+                                                                      <http://www.W3C.org/casaz/ontologies/2024/10/etvco/CompositionOfAspects> ;
+                                                          rdfs:range <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> .
 
 
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/recognizedAspect
-:recognizedAspect rdf:type owl:ObjectProperty ,
-                           owl:FunctionalProperty ,
-                           owl:InverseFunctionalProperty ,
-                           owl:AsymmetricProperty ,
-                           owl:IrreflexiveProperty ;
-                  rdfs:domain :PerceptionRecognition ;
-                  rdfs:range :Aspect .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/recognizedAspect
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/recognizedAspect> rdf:type owl:ObjectProperty ,
+                                                                              owl:FunctionalProperty ,
+                                                                              owl:InverseFunctionalProperty ,
+                                                                              owl:AsymmetricProperty ,
+                                                                              owl:IrreflexiveProperty ;
+                                                                     rdfs:domain <http://www.W3C.org/casaz/ontologies/2024/10/etvco/PerceptionRecognition> ;
+                                                                     rdfs:range <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect> .
 
 
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/recognizedCompositionOfAspects
-:recognizedCompositionOfAspects rdf:type owl:ObjectProperty ,
-                                         owl:FunctionalProperty ,
-                                         owl:InverseFunctionalProperty ,
-                                         owl:AsymmetricProperty ,
-                                         owl:IrreflexiveProperty ;
-                                rdfs:domain :PerceptionRecognition ;
-                                rdfs:range :CompositionOfAspects .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/recognizedCompositionOfAspects
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/recognizedCompositionOfAspects> rdf:type owl:ObjectProperty ,
+                                                                                            owl:FunctionalProperty ,
+                                                                                            owl:InverseFunctionalProperty ,
+                                                                                            owl:AsymmetricProperty ,
+                                                                                            owl:IrreflexiveProperty ;
+                                                                                   rdfs:domain <http://www.W3C.org/casaz/ontologies/2024/10/etvco/PerceptionRecognition> ;
+                                                                                   rdfs:range <http://www.W3C.org/casaz/ontologies/2024/10/etvco/CompositionOfAspects> .
 
 
 #################################################################
 #    Classes
 #################################################################
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter> rdf:type owl:Class ;
+                                                                          owl:equivalentClass [ owl:intersectionOf ( <http://iflastandards.info/ns/fr/frbr/frbroo/F38>
+                                                                                                                     <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedConcept>
+                                                                                                                   ) ;
+                                                                                                rdf:type owl:Class
+                                                                                              ] .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedConcept
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedConcept> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Concept> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject> rdf:type owl:Class ;
+                                                                             owl:equivalentClass [ owl:intersectionOf ( <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnology>
+                                                                                                                        <http://www.W3C.org/casaz/ontologies/2024/10/etvco/TechnologicalObject>
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ] .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnology
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnology> rdf:type owl:Class ;
+                                                                    owl:equivalentClass [ owl:intersectionOf ( <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedConcept>
+                                                                                                               <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Technology>
+                                                                                                             ) ;
+                                                                                          rdf:type owl:Class
+                                                                                        ] .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedConcept
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedConcept> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Concept> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ArcheologyRelatedConcept
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/ArcheologyRelatedConcept> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedConcept> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect> rdf:type owl:Class .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Color
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/Color> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/CompositionOfAspects
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/CompositionOfAspects> rdf:type owl:Class .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Concept
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/Concept> rdf:type owl:Class .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/HumanoidFigure
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/HumanoidFigure> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> rdf:type owl:Class .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/PerceptionRecognition
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/PerceptionRecognition> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <https://w3id.org/icon/ontology/Recognition> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Position
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/Position> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> rdf:type owl:Class ;
+                                                                    owl:equivalentClass <https://w3id.org/icon/ontology/NaturalElement> ;
+                                                                    rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ,
+                                                                                    <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ReligionRelatedConcept
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/ReligionRelatedConcept> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedConcept> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ReligiousSymbol
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/ReligiousSymbol> rdf:type owl:Class ;
+                                                                    owl:equivalentClass [ owl:intersectionOf ( <http://www.W3C.org/casaz/ontologies/2024/10/etvco/ReligionRelatedConcept>
+                                                                                                               <https://w3id.org/icon/ontology/Symbol>
+                                                                                                             ) ;
+                                                                                          rdf:type owl:Class
+                                                                                        ] .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Shape
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/Shape> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Size
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/Size> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/TechnologicalObject
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/TechnologicalObject> rdf:type owl:Class ;
+                                                                        owl:equivalentClass [ owl:intersectionOf ( <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject>
+                                                                                                                   <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Technology>
+                                                                                                                 ) ;
+                                                                                              rdf:type owl:Class
+                                                                                            ] .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Technology
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/Technology> rdf:type owl:Class .
+
+
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo
-<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo> owl:equivalentClass :AlienTechnologicalObject .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter
-:AlienRelatedCharacter rdf:type owl:Class ;
-                       owl:equivalentClass [ owl:intersectionOf ( <http://iflastandards.info/ns/fr/frbr/frbroo/F38>
-                                                                  :AlienRelatedConcept
-                                                                ) ;
-                                             rdf:type owl:Class
-                                           ] .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AlienRelatedConcept
-:AlienRelatedConcept rdf:type owl:Class ;
-                     rdfs:subClassOf :Concept .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject
-:AlienTechnologicalObject rdf:type owl:Class ;
-                          owl:equivalentClass [ owl:intersectionOf ( :AlienTechnology
-                                                                     :TechnologicalObject
-                                                                   ) ;
-                                                rdf:type owl:Class
-                                              ] .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AlienTechnology
-:AlienTechnology rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( :AlienRelatedConcept
-                                                            :Technology
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedConcept
-:AnthropocentrismRelatedConcept rdf:type owl:Class ;
-                                rdfs:subClassOf :Concept .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/ArcheologyRelatedConcept
-:ArcheologyRelatedConcept rdf:type owl:Class ;
-                          rdfs:subClassOf :AnthropocentrismRelatedConcept .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Aspect
-:Aspect rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Color
-:Color rdf:type owl:Class ;
-       rdfs:subClassOf :Aspect .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/CompositionOfAspects
-:CompositionOfAspects rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Concept
-:Concept rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/HumanoidFigure
-:HumanoidFigure rdf:type owl:Class ;
-                rdfs:subClassOf :RealWorldObject .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Interpretation
-:Interpretation rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Object
-:Object rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/PerceptionRecognition
-:PerceptionRecognition rdf:type owl:Class ;
-                       rdfs:subClassOf <https://w3id.org/icon/ontology/Recognition> .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Position
-:Position rdf:type owl:Class ;
-          rdfs:subClassOf :Aspect .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/RealWorldObject
-:RealWorldObject rdf:type owl:Class ;
-                 owl:equivalentClass <https://w3id.org/icon/ontology/NaturalElement> ;
-                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ,
-                                 <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/ReligionRelatedConcept
-:ReligionRelatedConcept rdf:type owl:Class ;
-                        rdfs:subClassOf :AnthropocentrismRelatedConcept .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/ReligiousSymbol
-:ReligiousSymbol rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( :ReligionRelatedConcept
-                                                            <https://w3id.org/icon/ontology/Symbol>
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Shape
-:Shape rdf:type owl:Class ;
-       rdfs:subClassOf :Aspect .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Size
-:Size rdf:type owl:Class ;
-      rdfs:subClassOf :Aspect .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/TechnologicalObject
-:TechnologicalObject rdf:type owl:Class ;
-                     owl:equivalentClass [ owl:intersectionOf ( :RealWorldObject
-                                                                :Technology
-                                                              ) ;
-                                           rdf:type owl:Class
-                                         ] .
-
-
-###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/Technology
-:Technology rdf:type owl:Class .
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo> rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject> .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#interpretation_1
-:interpretation_1 rdf:type owl:NamedIndividual ,
-                           :Interpretation ;
-                  :dependsOn <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> ;
-                  :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation> ;
+                                                                     <http://www.W3C.org/casaz/ontologies/2024/10/etvco/dependsOn> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> ;
+                                                                     <http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasOutput> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped
-<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped> rdf:type :Aspect .
-
-
-###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Object
-<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Object> :makes <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> .
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped> rdf:type <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Shape> ;
+                                                                        <http://www.W3C.org/casaz/ontologies/2024/10/etvco/makes> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1
-<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> rdf:type :Object ;
-                                                                     :hasInterpretation :interpretation_1 .
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> rdf:type <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> ;
+                                                                     <http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasInterpretation> <http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1> .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1
-<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> :isDefinedBy :interpretation_1 .
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> <http://www.W3C.org/casaz/ontologies/2024/10/etvco/isDefinedBy> <http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1> .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
