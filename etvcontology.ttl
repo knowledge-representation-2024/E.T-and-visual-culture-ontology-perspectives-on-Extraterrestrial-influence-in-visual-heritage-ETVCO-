@@ -8,6 +8,7 @@
 
 <http://www.W3C.org/casaz/ontologies/2024/10/etvco> rdf:type owl:Ontology ;
                                                      owl:imports <http://www.W3C.org/casaz/ontologies/2024/10/etvco-story2> ,
+                                                                 <http://www.W3C.org/casaz/ontologies/2024/10/etvco/story2-text3> ,
                                                                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl> ,
                                                                  <https://w3id.org/icon/ontology/2.1.0/> .
 
@@ -95,8 +96,20 @@
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#hasLabel
+:hasLabel rdf:type owl:DatatypeProperty .
+
+
+#################################################################
 #    Classes
 #################################################################
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#ReligionRelatedCharacter
+:ReligionRelatedCharacter rdf:type owl:Class .
+
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter
 <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter> rdf:type owl:Class ;
@@ -200,12 +213,63 @@
 
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo
-<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo> rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject> .
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject> ,
+                                                                                <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> .
 
 
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#artistic_motif_1
+:artistic_motif_1 rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/icon/ontology/ArtisticMotif> ;
+                  <https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf> :preicon_rec1 .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#artistic_motif_2
+:artistic_motif_2 rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/icon/ontology/ArtisticMotif> ;
+                  <https://w3id.org/icon/ontology/isRecAttributeOf> :image_1 .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#image_1
+:image_1 rdf:type owl:NamedIndividual ,
+                  <https://w3id.org/icon/ontology/Image> ;
+         <https://w3id.org/icon/ontology/hasCharacter> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#img_2
+:img_2 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/icon/ontology/Artwork> ;
+       :hasLabel "The Crucifixion of Christ" .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#interpretation_2
+:interpretation_2 rdf:type owl:NamedIndividual ,
+                           <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation> ;
+                  <http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasOutput> :unknown_1 .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#object_2
+:object_2 rdf:type owl:NamedIndividual ,
+                   <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> ;
+          <http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasInterpretation> :interpretation_2 .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#preicon_rec1
+:preicon_rec1 rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
+              <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#unknown_1
+:unknown_1 rdf:type owl:NamedIndividual ,
+                    <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> ,
+                    <https://w3id.org/icon/ontology/NaturalElement> ;
+           <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_2 .
+
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1
 <http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1> rdf:type owl:NamedIndividual ,
@@ -215,18 +279,39 @@
 
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped
-<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped> rdf:type <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Shape> ;
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Shape> ;
                                                                         <http://www.W3C.org/casaz/ontologies/2024/10/etvco/makes> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> .
 
 
+###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Dome-shaped
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Dome-shaped> rdf:type <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Shape> ;
+                                                                        <http://www.W3C.org/casaz/ontologies/2024/10/etvco/makes> :object_2 .
+
+
+###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> rdf:type <http://iflastandards.info/ns/fr/frbr/frbroo/F38> ,
+                                                                             :ReligionRelatedCharacter .
+
+
+###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#historian_1
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#historian_1> rdf:type <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> ;
+                                                                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates> :interpretation_2 .
+
+
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1
-<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> rdf:type <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> ;
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> ;
                                                                      <http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasInterpretation> <http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1> .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1
-<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> rdf:type <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject> ;
-                                                                  <http://www.W3C.org/casaz/ontologies/2024/10/etvco/isDefinedBy> <http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1> .
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject> ,
+                                                                           <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> ,
+                                                                           <https://w3id.org/icon/ontology/NaturalElement> ;
+                                                                  <http://www.W3C.org/casaz/ontologies/2024/10/etvco/isDefinedBy> <http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1> ;
+                                                                  <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_1 .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
