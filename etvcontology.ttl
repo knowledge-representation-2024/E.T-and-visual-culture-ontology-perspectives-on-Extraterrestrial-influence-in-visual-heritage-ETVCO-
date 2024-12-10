@@ -99,17 +99,13 @@
 #    Data properties
 #################################################################
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#hasLabel
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/hasLabel
 :hasLabel rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#ReligionRelatedCharacter
-:ReligionRelatedCharacter rdf:type owl:Class .
-
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter
 <http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter> rdf:type owl:Class ;
@@ -218,57 +214,18 @@
                                                                                 <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> .
 
 
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/ReligionRelatedCharacter
+:ReligionRelatedCharacter rdf:type owl:Class .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#artistic_motif_1
-:artistic_motif_1 rdf:type owl:NamedIndividual ,
-                           <https://w3id.org/icon/ontology/ArtisticMotif> ;
-                  <https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf> :preicon_rec1 .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#artistic_motif_2
-:artistic_motif_2 rdf:type owl:NamedIndividual ,
-                           <https://w3id.org/icon/ontology/ArtisticMotif> ;
-                  <https://w3id.org/icon/ontology/isRecAttributeOf> :image_1 .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#image_1
-:image_1 rdf:type owl:NamedIndividual ,
-                  <https://w3id.org/icon/ontology/Image> ;
-         <https://w3id.org/icon/ontology/hasCharacter> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#img_2
-:img_2 rdf:type owl:NamedIndividual ,
-                <https://w3id.org/icon/ontology/Artwork> ;
-       :hasLabel "The Crucifixion of Christ" .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#interpretation_2
-:interpretation_2 rdf:type owl:NamedIndividual ,
-                           <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation> ;
-                  <http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasOutput> :unknown_1 .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#object_2
-:object_2 rdf:type owl:NamedIndividual ,
-                   <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> ;
-          <http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasInterpretation> :interpretation_2 .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#preicon_rec1
-:preicon_rec1 rdf:type owl:NamedIndividual ,
-                       <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
-              <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
-
-
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#unknown_1
-:unknown_1 rdf:type owl:NamedIndividual ,
-                    <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> ,
-                    <https://w3id.org/icon/ontology/NaturalElement> ;
-           <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_2 .
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco#conspiracy_theorist_1
+:conspiracy_theorist_1 rdf:type owl:NamedIndividual ,
+                                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> ;
+                       <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates> <http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1> .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1
@@ -312,6 +269,55 @@
                                                                            <https://w3id.org/icon/ontology/NaturalElement> ;
                                                                   <http://www.W3C.org/casaz/ontologies/2024/10/etvco/isDefinedBy> <http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1> ;
                                                                   <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_1 .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/artistic_motif_1
+:artistic_motif_1 rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/icon/ontology/ArtisticMotif> ;
+                  <https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf> :preicon_rec1 .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/artistic_motif_2
+:artistic_motif_2 rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/icon/ontology/ArtisticMotif> ;
+                  <https://w3id.org/icon/ontology/isRecAttributeOf> :image_1 .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/image_1
+:image_1 rdf:type owl:NamedIndividual ,
+                  <https://w3id.org/icon/ontology/Image> ;
+         <https://w3id.org/icon/ontology/hasCharacter> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/img_2
+:img_2 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/icon/ontology/Artwork> ;
+       :hasLabel "The Crucifixion of Christ" .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/interpretation_2
+:interpretation_2 rdf:type owl:NamedIndividual ,
+                           <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation> ;
+                  <http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasOutput> :unknown_1 .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/object_2
+:object_2 rdf:type owl:NamedIndividual ,
+                   <http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object> ;
+          <http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasInterpretation> :interpretation_2 .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/preicon_rec1
+:preicon_rec1 rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
+              <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
+
+
+###  http://www.semanticweb.org/casaz/ontologies/2024/10/etvco/unknown_1
+:unknown_1 rdf:type owl:NamedIndividual ,
+                    <http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject> ,
+                    <https://w3id.org/icon/ontology/NaturalElement> ;
+           <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_2 .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
