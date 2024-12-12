@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco-text5/" uri="data/FRED_output_text5.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story1-text1" uri="data/FRED_output_text1.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story2-text4" uri="data/FRED_output_text4.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story2-text3" uri="data/FRED_output_text2.rdf"/>

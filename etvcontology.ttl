@@ -263,6 +263,12 @@
                                                                                                        :interpretation_3 .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_1
+:iconrec_1 rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/icon/ontology/IconographicalRecognition> ;
+           <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/image_1
 :image_1 rdf:type owl:NamedIndividual ,
                   <https://w3id.org/icon/ontology/Image> ;
@@ -272,7 +278,8 @@
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/image_2
 :image_2 rdf:type owl:NamedIndividual ,
                   <https://w3id.org/icon/ontology/Image> ;
-         <https://w3id.org/icon/ontology/hasRecAttribute> :artistic_motif_5 .
+         <https://w3id.org/icon/ontology/hasRecAttribute> :artistic_motif_5 ;
+         <https://w3id.org/icon/ontology/isImageOf> :iconrec_1 .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/img_1
