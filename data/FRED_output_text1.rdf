@@ -1,31 +1,29 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.W3C.org/casaz/ontologies/2024/10/etvco-story2#"
-     xml:base="http://www.W3C.org/casaz/ontologies/2024/10/etvco-story2"
-     xmlns:j.0="http://www.ontologydesignpatterns.org/ont/cnlp/coref.owl#"
-     xmlns:j.1="http://ontologydesignpatterns.org/cp/owl/semiotics.owl#"
-     xmlns:j.2="http://schema.org/"
-     xmlns:j.3="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#"
-     xmlns:j.4="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17"
-     xmlns:j.5="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#"
-     xmlns:j.6="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
-     xmlns:j.7="http://www.ontologydesignpatterns.org/ont/cnlp/dependencies.owl#"
-     xmlns:j.8="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#"
-     xmlns:j.9="http://www.essepuntato.it/2008/12/earmark#"
+<rdf:RDF xmlns="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story1-text1#"
+     xml:base="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story1-text1"
+     xmlns:j.0="http://ontologydesignpatterns.org/cp/owl/semiotics.owl#"
+     xmlns:j.1="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#"
+     xmlns:j.2="http://dbpedia.org/resource/"
+     xmlns:j.3="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#"
+     xmlns:j.4="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:j.5="http://www.ontologydesignpatterns.org/ont/cnlp/dependencies.owl#"
+     xmlns:j.6="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#"
+     xmlns:j.7="http://www.essepuntato.it/2008/12/earmark#"
+     xmlns:j.8="http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#"
+     xmlns:j.9="http://www.ontologydesignpatterns.org/ont/vn/abox/role/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:j.10="http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#"
-     xmlns:j.11="http://www.ontologydesignpatterns.org/ont/vn/abox/role/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.W3C.org/casaz/ontologies/2024/10/etvco-story2"/>
+    <owl:Ontology rdf:about="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story1-text1"/>
     
 
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
+    // Datatypes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -33,9 +31,9 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue -->
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
 
-    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -86,21 +84,9 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient"/>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#possibleType -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#possibleType"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/cnlp/coref.owl#coref -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/cnlp/coref.owl#coref"/>
     
 
 
@@ -122,15 +108,15 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#at -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#during -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#at"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#during"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crucifixionOf -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#familiarGreyOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crucifixionOf"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#familiarGreyOf"/>
     
 
 
@@ -140,15 +126,57 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#locatedIn -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#inMountainOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#locatedIn"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#inMountainOf"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#onSideOf -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#inPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#onSideOf"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#inPartOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#near -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#near"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#on -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#on"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#planetOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#planetOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#presenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#presenceOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#strangeSetOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#strangeSetOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#with -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#with"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#withDepictionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#withDepictionOf"/>
     
 
 
@@ -182,6 +210,12 @@
     
 
 
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/abox/role/Cause -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/vn/abox/role/Cause"/>
+    
+
+
     <!-- http://www.ontologydesignpatterns.org/ont/vn/abox/role/Destination -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/vn/abox/role/Destination"/>
@@ -191,6 +225,24 @@
     <!-- http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme1"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme2"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/abox/role/Topic -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/vn/abox/role/Topic"/>
     
 
 
@@ -217,39 +269,40 @@
     
 
 
-    <!-- http://dbpedia.org/resource/Crucifixion -->
+    <!-- http://dbpedia.org/resource/Cave_painting -->
 
-    <owl:Class rdf:about="http://dbpedia.org/resource/Crucifixion">
-        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crucifixion"/>
+    <owl:Class rdf:about="http://dbpedia.org/resource/Cave_painting">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave_paintings"/>
     </owl:Class>
     
 
 
-    <!-- http://dbpedia.org/resource/Crucifixion_of_Jesus -->
+    <!-- http://dbpedia.org/resource/Earth -->
 
-    <owl:Class rdf:about="http://dbpedia.org/resource/Crucifixion_of_Jesus">
-        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crucifixion"/>
+    <owl:Class rdf:about="http://dbpedia.org/resource/Earth">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Earth"/>
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Planet"/>
     </owl:Class>
     
 
 
-    <!-- http://dbpedia.org/resource/Mural -->
+    <!-- http://dbpedia.org/resource/Humanoid -->
 
-    <owl:Class rdf:about="http://dbpedia.org/resource/Mural">
-        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mural"/>
+    <owl:Class rdf:about="http://dbpedia.org/resource/Humanoid"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Petroglyph -->
+
+    <owl:Class rdf:about="http://dbpedia.org/resource/Petroglyph"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Prince_Regent_River -->
+
+    <owl:Class rdf:about="http://dbpedia.org/resource/Prince_Regent_River">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Prince_regent_river"/>
     </owl:Class>
-    
-
-
-    <!-- http://schema.org/Country -->
-
-    <owl:Class rdf:about="http://schema.org/Country"/>
-    
-
-
-    <!-- http://schema.org/Place -->
-
-    <owl:Class rdf:about="http://schema.org/Place"/>
     
 
 
@@ -271,134 +324,253 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Century -->
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Century"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#CenturyMural -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Being -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#CenturyMural">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mural"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Being"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crucifixion -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crucifixion"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depict -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave_paintings -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depict">
-        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/data/Depict_29020000"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave_paintings"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depiction -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depiction"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Earth -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Earth"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Engrave -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Engrave">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/data/Engrave_25010000"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Direction -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Eye -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Direction"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Eye"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shapedObject -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FamiliarGrey -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shapedObject">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Object"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FamiliarGrey">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Grey"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Flame -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Figure -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Flame"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Figure"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Locate -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Find -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Locate">
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Find">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/data/Find_13051000"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mural -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FollowingDepiction -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mural"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FollowingDepiction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depiction"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Object -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Grey -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Object"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Grey"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Observe -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Head -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Observe">
-        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/data/Observe_29050200"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Head"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Humanoid -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Humanoid"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indicate -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indicate">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/data/Indicate_78000100"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Side -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#LargeEye -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Side"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#LargeEye">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Eye"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Throw -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mission -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Throw">
-        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/data/Throw_17010110"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mission"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mountain -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mountain"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Non-humanBeing -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Non-humanBeing">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Being"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#OvalHead -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#OvalHead">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Head"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Part -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Part"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Petroglyph -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Petroglyph"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Planet -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Planet"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Presence -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Presence"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Prince_regent_river -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Prince_regent_river"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Reconnaissance -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Reconnaissance"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ReconnaissanceMission -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ReconnaissanceMission">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Refer -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Refer">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/data/Refer_86020200"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Set -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Set"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Strange -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#CenturyMural"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Strange">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/vn/data/Depict_29020000 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StrangeSet -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/vn/data/Depict_29020000"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StrangeSet">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Set"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/vn/data/Observe_29050200 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/data/Engrave_25010000 -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/vn/data/Observe_29050200"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/vn/data/Engrave_25010000"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/vn/data/Throw_17010110 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/data/Find_13051000 -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/vn/data/Throw_17010110"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/vn/data/Find_13051000"/>
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#DataTypeProperty -->
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/data/Indicate_78000100 -->
 
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DataTypeProperty"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/vn/data/Indicate_78000100"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/data/Refer_86020200 -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/vn/data/Refer_86020200"/>
     
 
 
@@ -419,119 +591,136 @@
     
 
 
-    <!-- http://dbpedia.org/resource/Mtskheta -->
+    <!-- http://dbpedia.org/resource/George_Gray_(television_personality) -->
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mtskheta">
-        <owl:sameAs rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mtskheta"/>
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/George_Gray_(television_personality)">
+        <owl:sameAs rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#George_gray"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mtskheta -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#George_gray -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mtskheta"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#George_gray"/>
     
 
 
-    <!-- http://dbpedia.org/resource/Georgia_(country) -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Being -->
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Georgia_(country)">
-        <rdf:type rdf:resource="http://schema.org/Country"/>
-        <rdf:type rdf:resource="http://schema.org/Place"/>
-        <owl:sameAs rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Georgia"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Being">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Georgia -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Georgia"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataTypeProperty"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#At -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave_paintings -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#At"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Century -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Century">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave_paintings">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#CenturyMural -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depiction -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#CenturyMural">
-        <j.6:associatedWith rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Century"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depiction">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Christ -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Earth -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Christ">
-        <j.10:possibleType rdf:resource="http://www.w3.org/2006/time#Interval"/>
-        <j.7:other_coref rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#throw_1"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Earth">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crucifixion -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Engrave -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crucifixion">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Engrave">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depict -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Eye -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depict">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Eye">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Direction -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Familiar -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Direction">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Familiar">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Figure -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Figure">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Flame -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Find -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Flame">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Find">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Georgia -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Following -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Georgia">
-        <j.10:possibleType rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Following">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#George_gray -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#George_gray">
+        <j.8:possibleType rdf:resource="http://xmlns.com/foaf/0.1/Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Grey -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Grey">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Head -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Head">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Humanoid -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Humanoid">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
@@ -542,51 +731,56 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Locate -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indicate -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Locate">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indicate">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mtskheta -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Inpartof -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mtskheta">
-        <j.10:possibleType rdf:resource="http://dbpedia.org/ontology/Place"/>
-        <j.6:associatedWith rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Georgia"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Inpartof"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Kimberley_australia -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Kimberley_australia">
+        <j.8:possibleType rdf:resource="http://dbpedia.org/ontology/Place"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mural -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Large -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mural">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Large">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Murals. -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mission -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Murals.">
-        <j.10:possibleType rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mission">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Object -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mountain -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Object">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mountain">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Observe -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Non-human -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Observe">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Non-human">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
     </owl:NamedIndividual>
     
 
@@ -603,87 +797,164 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Rel -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Oval -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Rel"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Side -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Side">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Oval">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Svetishoveli_cathedral -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Part -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Svetishoveli_cathedral">
-        <j.10:possibleType rdf:resource="http://xmlns.com/foaf/0.1/Organisation"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Part">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Throw -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Throw">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Topic -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Petroglyph -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Topic">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Petroglyph">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Planet -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Planet">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#century_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Presence -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#century_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Century"/>
-        <j.6:associatedWith rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mural_1"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Presence">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crucifixion_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Prince_regent_river -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crucifixion_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crucifixion"/>
-        <j.7:other_coref rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#neuter_1"/>
-        <j.3:crucifixionOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Christ"/>
-        <j.8:hasDeterminer rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Prince_regent_river">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depict_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Quantity -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depict_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depict"/>
-        <j.11:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mural_1"/>
-        <j.11:Theme rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crucifixion_1"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Quantity">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#direction_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Reconnaissance -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#direction_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Direction"/>
-        <j.8:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#any"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Reconnaissance">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ReconnaissanceMission -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ReconnaissanceMission">
+        <j.4:associatedWith rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Reconnaissance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Refer -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Refer">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Set -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Set">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Strange -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Strange">
+        <j.3:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StrangeSet -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StrangeSet">
+        <j.4:hasQuality rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Strange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#being_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#being_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Non-humanBeing"/>
+        <j.4:hasQuality rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Non-human"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cave_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cave_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave"/>
+        <j.1:inMountainOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Kimberley_australia"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cave_paintings_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cave_paintings_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave_paintings"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depiction_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depiction_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FollowingDepiction"/>
+        <j.4:hasQuality rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Following"/>
+        <j.6:hasDeterminer rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depiction_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depiction_2">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depiction"/>
+        <j.4:associatedWith rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#figure_1"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
     </owl:NamedIndividual>
     
 
@@ -692,571 +963,820 @@
 
     <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#StringDocuverse"/>
-        <j.9:hasContent>UFOs IN MURALS. 17th century mural depicting the crucifixion of Christ. It is located at the Svetishoveli Cathedral in Mtskheta, Georgia. Observe the two disc-shaped objects on both sides of Christ throwing flames at any direction.</j.9:hasContent>
+        <j.7:hasContent>Cave_paintings that have been found in many parts of the earth, indicate the presence of non-human beings on our planet. The following depictions are engraved in caves in the mountains of Kimberley Australia, near the Prince_Regent_River. During a reconnaissance mission in 1838, George_Gray found a strange set of petroglyphs, with depictions of humanoids with large eyes and oval heads, figures which refer to our familiar  greys .</j.7:hasContent>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#flame_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#earth_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#flame_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Flame"/>
-        <j.8:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#earth_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Earth"/>
+        <j.6:hasDeterminer rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#locate_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#engrave_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#locate_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Locate"/>
-        <j.10:patient rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crucifixion_1"/>
-        <j.3:at rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Svetishoveli_cathedral"/>
-        <j.3:locatedIn rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mtskheta"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#engrave_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Engrave"/>
+        <j.9:Destination rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cave_1"/>
+        <j.9:Theme rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depiction_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mural_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#eye_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mural_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural"/>
-        <j.6:associatedWith rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Murals."/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#eye_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#LargeEye"/>
+        <j.4:hasQuality rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Large"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#neuter_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#figure_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#neuter_1">
-        <j.0:coref rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crucifixion_1"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#figure_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Figure"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#find_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shapedObject"/>
-        <j.6:hasQuality rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped"/>
-        <j.3:onSideOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Christ"/>
-        <j.8:hasDeterminer rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the"/>
-        <j.8:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
-        <j.8:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#two"/>
-        <j.6:hasDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</j.6:hasDataValue>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#find_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Find"/>
+        <j.1:inPartOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#earth_1"/>
+        <j.9:Theme rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cave_paintings_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#observe_1 -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#find_2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#observe_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Observe"/>
-        <j.11:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1"/>
-        <j.11:Theme rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#find_2">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Find"/>
+        <j.1:during rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mission_1"/>
+        <j.1:withDepictionOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1"/>
+        <j.9:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#George_gray"/>
+        <j.9:Theme rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#set_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_0_4_UFOs -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_0_4_UFOs">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FamiliarGrey"/>
+        <j.4:hasQuality rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Familiar"/>
+        <j.1:familiarGreyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2"/>
+        <j.1:familiarGreyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#head_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#head_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#OvalHead"/>
+        <j.4:hasQuality rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Oval"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1">
+        <rdf:type rdf:resource="http://dbpedia.org/resource/Humanoid"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Humanoid"/>
+        <j.1:with rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#eye_1"/>
+        <j.1:with rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#head_1"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#indicate_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#indicate_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indicate"/>
+        <j.9:Cause rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cave_paintings_1"/>
+        <j.9:Topic rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#presence_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mission_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mission_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ReconnaissanceMission"/>
+        <j.1:in rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1838-01-01</j.1:in>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mountain_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mountain_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mountain"/>
+        <j.1:near rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#prince_regent_river_1"/>
+        <j.6:hasDeterminer rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_0_14_Cave_paintings -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_0_14_Cave_paintings">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</j.9:ends>
-        <rdfs:label>UFOs</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cave_paintings_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave_paintings"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">14</j.7:ends>
+        <rdfs:label>Cave_paintings</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_116_118_in -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_113_119_planet -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_116_118_in">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_113_119_planet">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#In"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">116</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">118</j.9:ends>
-        <rdfs:label>in</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#planet_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Planet"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">113</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">119</j.7:ends>
+        <rdfs:label>planet</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_119_127_Mtskheta -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_125_134_following -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_119_127_Mtskheta">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_125_134_following">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mtskheta"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNP"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">119</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">127</j.9:ends>
-        <rdfs:label>Mtskheta</rdfs:label>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Following"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">125</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">134</j.7:ends>
+        <rdfs:label>following</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_129_136_Georgia -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_135_145_depictions -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_129_136_Georgia">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_135_145_depictions">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Georgia"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNP"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">129</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">136</j.9:ends>
-        <rdfs:label>Georgia</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depiction_1"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depiction_2"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depiction"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">135</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">145</j.7:ends>
+        <rdfs:label>depictions</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_138_145_Observe -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_150_158_engraved -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_138_145_Observe">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_150_158_engraved">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#observe_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Observe"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VB"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">138</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">145</j.9:ends>
-        <rdfs:label>Observe</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#engrave_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Engrave"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">150</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">158</j.7:ends>
+        <rdfs:label>engraved</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_154_165_disc-shaped -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_162_167_caves -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_154_165_disc-shaped">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_162_167_caves">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">154</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">165</j.9:ends>
-        <rdfs:label>disc-shaped</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cave_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cave"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">162</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">167</j.7:ends>
+        <rdfs:label>caves</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_166_173_objects -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_175_184_mountains -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_166_173_objects">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_175_184_mountains">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Object"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">166</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">173</j.9:ends>
-        <rdfs:label>objects</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mountain_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mountain"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">175</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">184</j.7:ends>
+        <rdfs:label>mountains</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_16_20_17th -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_185_187_of -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_16_20_17th">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_185_187_of">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17th"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">16</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</j.9:ends>
-        <rdfs:label>17th</rdfs:label>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Of"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">185</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">187</j.7:ends>
+        <rdfs:label>of</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_174_176_on -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_218_237_Prince_Regent_River -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_174_176_on">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_218_237_Prince_Regent_River">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#On"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">174</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">176</j.9:ends>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#prince_regent_river_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Prince_regent_river"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">218</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">237</j.7:ends>
+        <rdfs:label>Prince_Regent_River</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_248_262_reconnaissance -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_248_262_reconnaissance">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#reconnaissance_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Reconnaissance"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">248</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">262</j.7:ends>
+        <rdfs:label>reconnaissance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_251_253_on -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_251_253_on">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#On"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">251</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">253</j.7:ends>
         <rdfs:label>on</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_182_187_sides -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_263_270_mission -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_182_187_sides">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_263_270_mission">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#side_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Side"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">182</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">187</j.9:ends>
-        <rdfs:label>sides</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mission_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mission"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">263</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">270</j.7:ends>
+        <rdfs:label>mission</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_188_190_of -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_280_291_George_Gray -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_188_190_of">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_280_291_George_Gray">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Of"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">188</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">190</j.9:ends>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#George_gray"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNP"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">280</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">291</j.7:ends>
+        <rdfs:label>George_Gray</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_300_307_strange -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_300_307_strange">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Strange"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">300</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">307</j.7:ends>
+        <rdfs:label>strange</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_308_311_set -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_308_311_set">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#set_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Set"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">308</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">311</j.7:ends>
+        <rdfs:label>set</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_30_35_found -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_30_35_found">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#find_1"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#find_2"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Find"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBD"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">30</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">35</j.7:ends>
+        <rdfs:label>found</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_315_326_petroglyphs -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_315_326_petroglyphs">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#petroglyph_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Petroglyph"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">315</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">326</j.7:ends>
+        <rdfs:label>petroglyphs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_347_356_humanoids -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_347_356_humanoids">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Humanoid"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">347</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">356</j.7:ends>
+        <rdfs:label>humanoids</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_362_367_large -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_362_367_large">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Large"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">362</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">367</j.7:ends>
+        <rdfs:label>large</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_368_372_eyes -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_368_372_eyes">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#eye_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Eye"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">368</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">372</j.7:ends>
+        <rdfs:label>eyes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_377_381_oval -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_377_381_oval">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Oval"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">377</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">381</j.7:ends>
+        <rdfs:label>oval</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_382_387_heads -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_382_387_heads">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#head_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Head"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">382</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">387</j.7:ends>
+        <rdfs:label>heads</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_389_396_figures -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_389_396_figures">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#figure_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Figure"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">389</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">396</j.7:ends>
+        <rdfs:label>figures</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_39_43_many -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_39_43_many">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Quantity"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">39</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">43</j.7:ends>
+        <rdfs:label>many</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_403_408_refer -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_403_408_refer">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#refer_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Refer"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBP"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">403</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">408</j.7:ends>
+        <rdfs:label>refer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_412_415_our -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_412_415_our">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Of"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#PRP%24"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">412</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">415</j.7:ends>
+        <rdfs:label>our</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_416_424_familiar -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_416_424_familiar">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Familiar"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">416</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">424</j.7:ends>
+        <rdfs:label>familiar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_426_431_greys -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_426_431_greys">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Grey"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">426</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">431</j.7:ends>
+        <rdfs:label>greys</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_44_49_parts -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_44_49_parts">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#part_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Part"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">44</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">49</j.7:ends>
+        <rdfs:label>parts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_57_62_earth -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_57_62_earth">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#earth_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Earth"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">57</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">62</j.7:ends>
+        <rdfs:label>earth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_64_72_indicate -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_64_72_indicate">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#indicate_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indicate"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBP"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">64</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">72</j.7:ends>
+        <rdfs:label>indicate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_77_85_presence -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_77_85_presence">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#presence_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Presence"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">77</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">85</j.7:ends>
+        <rdfs:label>presence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_7_9_in -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_7_9_in">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#In"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">9</j.7:ends>
+        <rdfs:label>in</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_86_88_of -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_86_88_of">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Of"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">86</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">88</j.7:ends>
         <rdfs:label>of</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_191_197_Christ -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_89_98_non-human -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_191_197_Christ">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_89_98_non-human">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Christ"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">191</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">197</j.9:ends>
-        <rdfs:label>Christ</rdfs:label>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Non-human"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">89</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">98</j.7:ends>
+        <rdfs:label>non-human</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_198_206_throwing -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_99_105_beings -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_198_206_throwing">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_99_105_beings">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#throw_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Throw"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBG"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">198</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">206</j.9:ends>
-        <rdfs:label>throwing</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#being_1"/>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Being"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.3:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">99</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">105</j.7:ends>
+        <rdfs:label>beings</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_207_213_flames -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#part_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_207_213_flames">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#part_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Part"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#many"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#petroglyph_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#petroglyph_1">
+        <rdf:type rdf:resource="http://dbpedia.org/resource/Petroglyph"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Petroglyph"/>
+        <j.6:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#planet_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#planet_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Planet"/>
+        <j.5:other_coref rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1"/>
+        <j.1:planetOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#presence_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#presence_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Presence"/>
+        <j.1:on rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#planet_1"/>
+        <j.1:presenceOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#being_1"/>
+        <j.6:hasDeterminer rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#prince_regent_river_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#prince_regent_river_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Prince_regent_river"/>
+        <j.6:hasDeterminer rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#reconnaissance_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#reconnaissance_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Reconnaissance"/>
+        <j.4:associatedWith rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mission_1"/>
+        <j.6:hasDeterminer rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#refer_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#refer_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Refer"/>
+        <j.9:Theme1 rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#figure_1"/>
+        <j.9:Theme2 rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#set_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#set_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StrangeSet"/>
+        <j.1:strangeSetOf rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#petroglyph_1"/>
+        <j.6:hasDeterminer rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_188_207_Kimberley+Australia -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_188_207_Kimberley+Australia">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#flame_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Flame"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">207</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">213</j.9:ends>
-        <rdfs:label>flames</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Kimberley_australia"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">188</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">207</j.7:ends>
+        <rdfs:label>Kimberley Australia</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_214_216_at -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_248_270_reconnaissance+mission -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_214_216_at">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_248_270_reconnaissance+mission">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/abox/role/Destination"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">214</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">216</j.9:ends>
-        <rdfs:label>at</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ReconnaissanceMission"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">248</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">270</j.7:ends>
+        <rdfs:label>Reconnaissance Mission</rdfs:label>
+        <rdfs:label>reconnaissance mission</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_21_28_century -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_300_311_strange+set -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_21_28_century">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_300_311_strange+set">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Murals."/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#century_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Century"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">21</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">28</j.9:ends>
-        <rdfs:label>century</rdfs:label>
+        <j.0:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StrangeSet"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">300</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">311</j.7:ends>
+        <rdfs:label>Strange Set</rdfs:label>
+        <rdfs:label>strange set</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_221_230_direction -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_36_52_in+many+parts+of -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_221_230_direction">
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_36_52_in+many+parts+of">
         <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#direction_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Direction"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">221</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">230</j.9:ends>
-        <rdfs:label>direction</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_29_34_mural -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_29_34_mural">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Murals."/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mural_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mural"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">29</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">34</j.9:ends>
-        <rdfs:label>mural</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_35_44_depicting -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_35_44_depicting">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#depict_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Depict"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBG"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">35</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">44</j.9:ends>
-        <rdfs:label>depicting</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_49_60_crucifixion -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_49_60_crucifixion">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crucifixion_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crucifixion"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">49</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">60</j.9:ends>
-        <rdfs:label>crucifixion</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_5_7_IN -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_5_7_IN">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#In"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</j.9:ends>
-        <rdfs:label>IN</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_61_63_of -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_61_63_of">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Of"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">61</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">63</j.9:ends>
-        <rdfs:label>of</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_64_70_Christ -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_64_70_Christ">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Christ"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNP"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">64</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">70</j.9:ends>
-        <rdfs:label>Christ</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_72_74_It -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_72_74_It">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crucifixion_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#PRP"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">72</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">74</j.9:ends>
-        <rdfs:label>It</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_78_85_located -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_78_85_located">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#locate_1"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Locate"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">78</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">85</j.9:ends>
-        <rdfs:label>located</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_81_83_at -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_81_83_at">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#At"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">81</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">83</j.9:ends>
-        <rdfs:label>at</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_8_15_MURALS. -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_8_15_MURALS.">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Murals."/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Century"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mural"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNP"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">15</j.9:ends>
-        <rdfs:label>MURALS.</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#side_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#side_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Side"/>
-        <j.8:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#both"/>
-        <j.8:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1 -->
-
-    <owl:Thing rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#throw_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#throw_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Throw"/>
-        <j.11:Agent rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1"/>
-        <j.11:Destination rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#direction_1"/>
-        <j.11:Theme rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#flame_1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo"/>
-        <j.6:hasQuality rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Topic"/>
-        <j.3:in rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mural_1"/>
-        <j.8:hasQuantifier rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17th -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17th">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_127_128_%2C -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_127_128_%2C">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Rel"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.5:pennpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#%2C"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">127</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">128</j.9:ends>
-        <rdfs:label>,</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_16_34_17th+century+mural -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_16_34_17th+century+mural">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">16</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">34</j.9:ends>
-        <rdfs:label>17th Century Mural</rdfs:label>
-        <rdfs:label>17th century mural</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_21_34_century+mural -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_21_34_century+mural">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#CenturyMural"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">21</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">34</j.9:ends>
-        <rdfs:label>Century Mural</rdfs:label>
-        <rdfs:label>century mural</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_93_115_Svetishoveli+Cathedral -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_93_115_Svetishoveli+Cathedral">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#PointerRange"/>
-        <j.1:denotes rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Svetishoveli_cathedral"/>
-        <j.9:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
-        <j.9:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">93</j.9:begins>
-        <j.9:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">115</j.9:ends>
-        <rdfs:label>Svetishoveli Cathedral</rdfs:label>
+        <j.0:hasInterpretant rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Inpartof"/>
+        <j.7:refersTo rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse"/>
+        <j.7:begins rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">36</j.7:begins>
+        <j.7:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">52</j.7:ends>
+        <rdfs:label>in many parts of</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1291,27 +1811,21 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/pos.owl#PRP -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBD -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#PRP"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VB -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VB"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBG -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBG"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBD"/>
     
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBN -->
 
     <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBN"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBP -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBP"/>
     
 
 
@@ -1333,21 +1847,21 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/pos.owl#%2C -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/pos.owl#PRP%24 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#%2C"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#PRP%24"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#any -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#any"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a"/>
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#both -->
+    <!-- http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#many -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#both"/>
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#many"/>
     
 
 
@@ -1360,33 +1874,6 @@
     <!-- http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the -->
 
     <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#two -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#two"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/vn/abox/role/Destination -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/vn/abox/role/Destination"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <owl:NamedIndividual rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a"/>
-        <j.5:boxerpos rdf:resource="http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.w3.org/2006/time#Interval -->
-
-    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Interval"/>
     
 
 
