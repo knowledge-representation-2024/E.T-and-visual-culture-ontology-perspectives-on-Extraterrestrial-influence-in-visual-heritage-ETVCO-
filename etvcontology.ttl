@@ -8,6 +8,7 @@
 
 <http://www.W3C.org/casaz/ontologies/2024/10/etvco/> rdf:type owl:Ontology ;
                                                       owl:imports <http://www.W3C.org/casaz/ontologies/2024/10/etvco-story2> ,
+                                                                  <http://www.W3C.org/casaz/ontologies/2024/10/etvco-text5/> ,
                                                                   :story1-text1 ,
                                                                   :story2-text3 ,
                                                                   :story2-text4 ,
@@ -25,6 +26,12 @@
                     owl:IrreflexiveProperty ;
            rdfs:domain :Interpretation ;
            rdfs:range :Object .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasCulturalContext
+:hasCulturalContext rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://w3id.org/icon/ontology/Artwork> ;
+                    rdfs:range :CulturalContext .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasInterpretation
@@ -151,6 +158,10 @@
 :Concept rdf:type owl:Class .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/CulturalContext
+:CulturalContext rdf:type owl:Class .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/HumanoidFigure
 :HumanoidFigure rdf:type owl:Class ;
                 rdfs:subClassOf :RealWorldObject .
@@ -269,6 +280,12 @@
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_2
+:iconrec_2 rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/icon/ontology/IconographicalRecognition> ;
+           <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/image_1
 :image_1 rdf:type owl:NamedIndividual ,
                   <https://w3id.org/icon/ontology/Image> ;
@@ -282,9 +299,16 @@
          <https://w3id.org/icon/ontology/isImageOf> :iconrec_1 .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/image_3
+:image_3 rdf:type owl:NamedIndividual ,
+                  <https://w3id.org/icon/ontology/Image> ;
+         <https://w3id.org/icon/ontology/isImageOf> :iconrec_2 .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/img_1
 :img_1 rdf:type owl:NamedIndividual ,
                 <https://w3id.org/icon/ontology/Artwork> ;
+       :hasCulturalContext <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#AboriginalTradition> ;
        :hasLabel "Petroglyphs in caves in the mountains of Kimberley Australia" .
 
 
@@ -424,6 +448,12 @@
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#sky_1
 <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#sky_1> rdf:type :Position ;
                                                                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf> :composition_1 .
+
+
+###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#spirit_1
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#spirit_1> rdf:type :ReligionRelatedCharacter ,
+                                                                              <https://w3id.org/icon/ontology/Character> ;
+                                                                     <https://w3id.org/icon/ontology/isCharacterOf> :image_3 .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1
