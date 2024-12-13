@@ -7,10 +7,10 @@
     <uri id="Imports Wizard Entry" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco-story2" uri="data/FRED_output_story2.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco-data" uri="data/output_story2_owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1734087021580" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco-text5/" uri="data/FRED_output_text5.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1734087021580" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story1-text1" uri="data/FRED_output_text1.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1734087021580" name="duplicate:http://www.W3C.org/casaz/ontologies/2024/10/etvco/story2-text3" uri="data/FRED_output_text2.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1734087021580" name="duplicate:http://www.W3C.org/casaz/ontologies/2024/10/etvco/story2-text3" uri="data/FRED_output_text3.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1734087021580" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story2-text4" uri="data/FRED_output_text4.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1734103855795" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco-text5/" uri="data/FRED_output_text5.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1734103855795" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story1-text1" uri="data/FRED_output_text1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1734103855795" name="duplicate:http://www.W3C.org/casaz/ontologies/2024/10/etvco/story2-text3" uri="data/FRED_output_text2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1734103855795" name="duplicate:http://www.W3C.org/casaz/ontologies/2024/10/etvco/story2-text3" uri="data/FRED_output_text3.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1734103855795" name="http://www.W3C.org/casaz/ontologies/2024/10/etvco/story2-text4" uri="data/FRED_output_text4.rdf"/>
     </group>
 </catalog>

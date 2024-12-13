@@ -104,6 +104,18 @@
                                 rdfs:range :CompositionOfAspects .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/wasCreatedInPeriod
+:wasCreatedInPeriod rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://w3id.org/icon/ontology/Artwork> ;
+                    rdfs:range :Period .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/wasCreatedInPlace
+:wasCreatedInPlace rdf:type owl:ObjectProperty ;
+                   rdfs:domain <https://w3id.org/icon/ontology/Artwork> ;
+                   rdfs:range :Place .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -126,9 +138,19 @@
                      rdfs:subClassOf :Concept .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedInterpretation
+:AlienRelatedInterpretation rdf:type owl:Class ;
+                            rdfs:subClassOf :Interpretation .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject
 :AlienTechnologicalObject rdf:type owl:Class ;
                           rdfs:subClassOf :RealWorldObject .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AncientTime
+:AncientTime rdf:type owl:Class ;
+             rdfs:subClassOf :Period .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedConcept
@@ -172,6 +194,11 @@
                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ModernTime
+:ModernTime rdf:type owl:Class ;
+            rdfs:subClassOf :Period .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object
 :Object rdf:type owl:Class .
 
@@ -179,6 +206,14 @@
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/PerceptionRecognition
 :PerceptionRecognition rdf:type owl:Class ;
                        rdfs:subClassOf <https://w3id.org/icon/ontology/Recognition> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Period
+:Period rdf:type owl:Class .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Place
+:Place rdf:type owl:Class .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Position
@@ -277,6 +312,7 @@
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_1
 :iconrec_1 rdf:type owl:NamedIndividual ,
                     <https://w3id.org/icon/ontology/IconographicalRecognition> ;
+           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_4 ;
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
 
 
@@ -309,12 +345,15 @@
 :img_1 rdf:type owl:NamedIndividual ,
                 <https://w3id.org/icon/ontology/Artwork> ;
        :hasCulturalContext <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#AboriginalTradition> ;
+       :wasCreatedInPlace <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Kimberley_australia> ;
        :hasLabel "Petroglyphs in caves in the mountains of Kimberley Australia" .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/img_2
 :img_2 rdf:type owl:NamedIndividual ,
                 <https://w3id.org/icon/ontology/Artwork> ;
+       :wasCreatedInPeriod <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural> ;
+       :wasCreatedInPlace <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Svetishoveli_cathedral> ;
        :hasLabel "The Crucifixion of Christ" .
 
 
@@ -326,6 +365,7 @@
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1
 :interpretation_1 rdf:type owl:NamedIndividual ,
+                           :AlienRelatedInterpretation ,
                            :Interpretation ;
                   :dependsOn <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> ;
                   :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> .
@@ -339,8 +379,16 @@
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_3
 :interpretation_3 rdf:type owl:NamedIndividual ,
+                           :AlienRelatedInterpretation ,
                            :Interpretation ;
                   :hasOutput :ufo_2 .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_4
+:interpretation_4 rdf:type owl:NamedIndividual ,
+                           :AlienRelatedInterpretation ,
+                           :Interpretation ;
+                  :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/object_2
@@ -352,6 +400,7 @@
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec1
 :preicon_rec1 rdf:type owl:NamedIndividual ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_1 ;
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
 
 
@@ -394,6 +443,10 @@
                                                                         :makes :object_2 .
 
 
+###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Kimberley_australia
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Kimberley_australia> rdf:type :Place .
+
+
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Round
 <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Round> rdf:type :Aspect ,
                                                                            :Shape ;
@@ -403,6 +456,10 @@
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#RoundObject
 <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#RoundObject> rdf:type :Object ;
                                                                         :hasInterpretation :interpretation_3 .
+
+
+###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Svetishoveli_cathedral
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Svetishoveli_cathedral> rdf:type :Place .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1
@@ -463,6 +520,16 @@
                                                                            <https://w3id.org/icon/ontology/NaturalElement> ;
                                                                   :isDefinedBy :interpretation_1 ;
                                                                   <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_1 .
+
+
+###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#year_1
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#year_1> rdf:type :AncientTime ,
+                                                                            :Period .
+
+
+###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural> rdf:type :ModernTime ,
+                                                                                      :Period .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
