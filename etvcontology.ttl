@@ -360,35 +360,53 @@
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/img_3
 :img_3 rdf:type owl:NamedIndividual ,
                 <https://w3id.org/icon/ontology/Artwork> ;
+       :wasCreatedInPeriod <http://www.W3C.org/casaz/ontologies/2024/10/etvco/1338_A.D.> ;
        :hasLabel "Le Livre Des Bonnes Moeurs" .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1
 :interpretation_1 rdf:type owl:NamedIndividual ,
                            :AlienRelatedInterpretation ,
-                           :Interpretation ;
+                           :Interpretation ,
+                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
                   :dependsOn <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> ;
-                  :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> .
+                  :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> ;
+                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_2
 :interpretation_2 rdf:type owl:NamedIndividual ,
-                           :Interpretation ;
+                           :Interpretation ,
+                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
                   :hasOutput :unknown_1 .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_3
 :interpretation_3 rdf:type owl:NamedIndividual ,
                            :AlienRelatedInterpretation ,
-                           :Interpretation ;
-                  :hasOutput :ufo_2 .
+                           :Interpretation ,
+                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
+                  :hasOutput :ufo_2 ;
+                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> :ufo_2 .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_4
 :interpretation_4 rdf:type owl:NamedIndividual ,
                            :AlienRelatedInterpretation ,
-                           :Interpretation ;
-                  :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> .
+                           :Interpretation ,
+                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
+                  :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> ;
+                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_5
+:interpretation_5 rdf:type owl:NamedIndividual ,
+                           :AlienRelatedInterpretation ,
+                           :Interpretation ,
+                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
+                  :dependsOn <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> ;
+                  :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1> ;
+                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1> .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/object_2
@@ -407,6 +425,7 @@
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec2
 :preicon_rec2 rdf:type owl:NamedIndividual ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_3 ;
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_3 .
 
 
@@ -420,7 +439,8 @@
 :ufo_2 rdf:type owl:NamedIndividual ,
                 :AlienTechnologicalObject ,
                 :RealWorldObject ,
-                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo> ;
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ufo> ,
+                <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> ;
        <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_3 .
 
 
@@ -429,6 +449,12 @@
                     :RealWorldObject ,
                     <https://w3id.org/icon/ontology/NaturalElement> ;
            <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_2 .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/1338_A.D.
+<http://www.W3C.org/casaz/ontologies/2024/10/etvco/1338_A.D.> rdf:type owl:NamedIndividual ,
+                                                                       :ModernTime ,
+                                                                       :Period .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disc-shaped
@@ -475,6 +501,7 @@
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1
 <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1> rdf:type :AlienRelatedCharacter ,
+                                                                            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> ,
                                                                             <https://w3id.org/icon/ontology/Character> ;
                                                                    <https://w3id.org/icon/ontology/isCharacterOf> :image_2 .
 
@@ -492,7 +519,8 @@
 
 ###  http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1
 <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> rdf:type :HumanoidFigure ,
-                                                                                :RealWorldObject ;
+                                                                                :RealWorldObject ,
+                                                                                <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> ;
                                                                        <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_4 .
 
 
@@ -517,6 +545,7 @@
 <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> rdf:type owl:NamedIndividual ,
                                                                            :AlienTechnologicalObject ,
                                                                            :RealWorldObject ,
+                                                                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> ,
                                                                            <https://w3id.org/icon/ontology/NaturalElement> ;
                                                                   :isDefinedBy :interpretation_1 ;
                                                                   <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_1 .
