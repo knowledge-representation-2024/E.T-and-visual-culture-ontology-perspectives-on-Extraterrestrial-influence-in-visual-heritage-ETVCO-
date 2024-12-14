@@ -158,9 +158,24 @@
                                 rdfs:subClassOf :Concept .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedInterpretation
+:AnthropocentrismRelatedInterpretation rdf:type owl:Class ;
+                                       rdfs:subClassOf :Interpretation .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ArcheologyRelatedConcept
 :ArcheologyRelatedConcept rdf:type owl:Class ;
                           rdfs:subClassOf :AnthropocentrismRelatedConcept .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ArcheologyRelatedInterpretation
+:ArcheologyRelatedInterpretation rdf:type owl:Class ;
+                                 rdfs:subClassOf :Interpretation .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ArtHistoryRelatedInterpretation
+:ArtHistoryRelatedInterpretation rdf:type owl:Class ;
+                                 rdfs:subClassOf :Interpretation .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect
@@ -199,6 +214,11 @@
             rdfs:subClassOf :Period .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/NegativeAttitude
+:NegativeAttitude rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object
 :Object rdf:type owl:Class .
 
@@ -219,6 +239,11 @@
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Position
 :Position rdf:type owl:Class ;
           rdfs:subClassOf :Aspect .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/PostiveAttitude
+:PostiveAttitude rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject
@@ -266,6 +291,10 @@
 #    Individuals
 #################################################################
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/archeologist_1
+:archeologist_1 rdf:type owl:NamedIndividual .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/artistic_motif_1
 :artistic_motif_1 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/icon/ontology/ArtisticMotif> ;
@@ -311,21 +340,36 @@
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_1
 :iconrec_1 rdf:type owl:NamedIndividual ,
+                    <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                     <https://w3id.org/icon/ontology/IconographicalRecognition> ;
+           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> :negative_attitude ;
            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_4 ;
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_2
 :iconrec_2 rdf:type owl:NamedIndividual ,
+                    <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                     <https://w3id.org/icon/ontology/IconographicalRecognition> ;
+           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser> :archeologist_1 ;
+           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_7 ;
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_3
+:iconrec_3 rdf:type owl:NamedIndividual ,
+                    <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
+                    <https://w3id.org/icon/ontology/IconographicalRecognition> ;
+           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#historian_1> ;
+           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_6 ;
+           <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/image_1
 :image_1 rdf:type owl:NamedIndividual ,
                   <https://w3id.org/icon/ontology/Image> ;
-         <https://w3id.org/icon/ontology/hasCharacter> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> .
+         <https://w3id.org/icon/ontology/hasCharacter> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> ;
+         <https://w3id.org/icon/ontology/isImageOf> :iconrec_3 .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/image_2
@@ -371,11 +415,13 @@
                            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
                   :dependsOn <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#object_1> ;
                   :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> ;
+                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts> :interpretation_6 ;
                   <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_2
 :interpretation_2 rdf:type owl:NamedIndividual ,
+                           :ArtHistoryRelatedInterpretation ,
                            :Interpretation ,
                            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
                   :hasOutput :unknown_1 .
@@ -406,7 +452,33 @@
                            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
                   :dependsOn <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> ;
                   :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1> ;
+                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#contrasts> :interpretation_7 ;
                   <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_6
+:interpretation_6 rdf:type owl:NamedIndividual ,
+                           :ArtHistoryRelatedInterpretation ,
+                           :Interpretation ,
+                           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> ;
+                  :dependsOn :unknown_1 ;
+                  :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> ;
+                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_7
+:interpretation_7 rdf:type owl:NamedIndividual ,
+                           :ArcheologyRelatedInterpretation ,
+                           :Interpretation ;
+                  :dependsOn <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> ;
+                  :hasOutput <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#spirit_1> ;
+                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#spirit_1> .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/negative_attitude
+:negative_attitude rdf:type owl:NamedIndividual ,
+                            :NegativeAttitude ,
+                            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/object_2
@@ -417,22 +489,35 @@
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec1
 :preicon_rec1 rdf:type owl:NamedIndividual ,
+                       <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> :negative_attitude ;
               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_1 ;
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec2
 :preicon_rec2 rdf:type owl:NamedIndividual ,
+                       <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> :negative_attitude ;
               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_3 ;
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_3 .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec3
 :preicon_rec3 rdf:type owl:NamedIndividual ,
+                       <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
+
+
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec4
+:preicon_rec4 rdf:type owl:NamedIndividual ,
+                       <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
+                       <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#historian_1> ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_2 .
 
 
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ufo_2
