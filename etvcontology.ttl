@@ -199,6 +199,11 @@
 :CulturalContext rdf:type owl:Class .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/HistoricalArtworkInterpretation
+:HistoricalArtworkInterpretation rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/HumanoidFigure
 :HumanoidFigure rdf:type owl:Class ;
                 rdfs:subClassOf :RealWorldObject .
@@ -338,11 +343,18 @@
                                                                                                        :interpretation_3 .
 
 
+###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/historical_artwork_interpretation
+:historical_artwork_interpretation rdf:type owl:NamedIndividual ,
+                                            :HistoricalArtworkInterpretation ,
+                                            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> .
+
+
 ###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_1
 :iconrec_1 rdf:type owl:NamedIndividual ,
                     <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                     <https://w3id.org/icon/ontology/IconographicalRecognition> ;
            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> :negative_attitude ;
+           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :historical_artwork_interpretation ;
            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_4 ;
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
 
@@ -351,6 +363,7 @@
 :iconrec_2 rdf:type owl:NamedIndividual ,
                     <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                     <https://w3id.org/icon/ontology/IconographicalRecognition> ;
+           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :historical_artwork_interpretation ;
            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser> :archeologist_1 ;
            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_7 ;
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
@@ -360,6 +373,7 @@
 :iconrec_3 rdf:type owl:NamedIndividual ,
                     <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                     <https://w3id.org/icon/ontology/IconographicalRecognition> ;
+           <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :historical_artwork_interpretation ;
            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#historian_1> ;
            <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_6 ;
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
@@ -492,6 +506,7 @@
                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> :negative_attitude ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :historical_artwork_interpretation ;
               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_1 ;
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
 
@@ -501,6 +516,7 @@
                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> :negative_attitude ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :historical_artwork_interpretation ;
               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_3 ;
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_3 .
 
@@ -509,6 +525,7 @@
 :preicon_rec3 rdf:type owl:NamedIndividual ,
                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :historical_artwork_interpretation ;
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
 
 
@@ -516,6 +533,7 @@
 :preicon_rec4 rdf:type owl:NamedIndividual ,
                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
+              <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> :historical_artwork_interpretation ;
               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Conceptualiser> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#historian_1> ;
               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_2 .
 
