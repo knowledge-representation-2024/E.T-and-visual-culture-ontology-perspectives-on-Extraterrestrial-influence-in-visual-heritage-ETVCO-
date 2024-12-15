@@ -8,3 +8,5 @@ This project adopts the Extreme Design (XD) methodology to ensure a user-focused
 
 The ontology provides a robust foundation for documenting and analyzing visual heritage, emphasizing the cognitive mechanisms that influence how artifacts are interpreted across diverse perspectives. By integrating cognitive perspectivization processes, it sheds light on how conspiracy theorists, influenced by biases, such as confirmation bias and pattern recognition, construct alternative interpretations of visual motifs,  also influenced by their background knowledge, . This tool supports semantic queries that explore how such interpretations diverge from mainstream views, enabling interdisciplinary research into the cognitive frameworks and cultural contexts that shape these narratives. Ultimately, the project fosters a deeper understanding of the psychological and cultural dynamics underlying conspiracy theories related to historical artifacts.
 
+![alt text](etvco.bmp)
+
