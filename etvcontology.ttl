@@ -1,12 +1,12 @@
-@prefix : <http://www.W3C.org/casaz/ontologies/2024/10/etvco/> .
+@prefix : <https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology.ttl> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.W3C.org/casaz/ontologies/2024/10/etvco/> .
+@base <https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology.ttl> .
 
-<http://www.W3C.org/casaz/ontologies/2024/10/etvco/> rdf:type owl:Ontology ;
+<https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology.ttl> rdf:type owl:Ontology ;
                                                       owl:imports <http://www.W3C.org/casaz/ontologies/2024/10/etvco-story2> ,
                                                                   <http://www.W3C.org/casaz/ontologies/2024/10/etvco-text5/> ,
                                                                   :story1-text1 ,
@@ -19,7 +19,7 @@
 #    Object Properties
 #################################################################
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/dependsOn
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/dependsOn
 :dependsOn rdf:type owl:ObjectProperty ,
                     owl:FunctionalProperty ,
                     owl:AsymmetricProperty ,
@@ -28,13 +28,13 @@
            rdfs:range :Object .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasCulturalContext
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/hasCulturalContext
 :hasCulturalContext rdf:type owl:ObjectProperty ;
                     rdfs:domain <https://w3id.org/icon/ontology/Artwork> ;
                     rdfs:range :CulturalContext .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasInterpretation
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/hasInterpretation
 :hasInterpretation rdf:type owl:ObjectProperty ,
                             owl:InverseFunctionalProperty ,
                             owl:AsymmetricProperty ,
@@ -43,7 +43,7 @@
                    rdfs:range :Interpretation .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasOutput
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/hasOutput
 :hasOutput rdf:type owl:ObjectProperty ;
            owl:inverseOf :isDefinedBy ;
            rdf:type owl:FunctionalProperty ,
@@ -54,7 +54,7 @@
            rdfs:range :RealWorldObject .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/isDefinedBy
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/isDefinedBy
 :isDefinedBy rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ,
                       owl:InverseFunctionalProperty ,
@@ -64,7 +64,7 @@
              rdfs:range :Interpretation .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/isMadeBy
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/isMadeBy
 :isMadeBy rdf:type owl:ObjectProperty ;
           owl:inverseOf :makes ;
           rdf:type owl:FunctionalProperty ,
@@ -75,7 +75,7 @@
                      :CompositionOfAspects .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/makes
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/makes
 :makes rdf:type owl:ObjectProperty ,
                 owl:FunctionalProperty ,
                 owl:IrreflexiveProperty ;
@@ -84,7 +84,7 @@
        rdfs:range :Object .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/recognizedAspect
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/recognizedAspect
 :recognizedAspect rdf:type owl:ObjectProperty ,
                            owl:FunctionalProperty ,
                            owl:InverseFunctionalProperty ,
@@ -94,7 +94,7 @@
                   rdfs:range :Aspect .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/recognizedCompositionOfAspects
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/recognizedCompositionOfAspects
 :recognizedCompositionOfAspects rdf:type owl:ObjectProperty ,
                                          owl:FunctionalProperty ,
                                          owl:InverseFunctionalProperty ,
@@ -104,13 +104,13 @@
                                 rdfs:range :CompositionOfAspects .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/wasCreatedInPeriod
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/wasCreatedInPeriod
 :wasCreatedInPeriod rdf:type owl:ObjectProperty ;
                     rdfs:domain <https://w3id.org/icon/ontology/Artwork> ;
                     rdfs:range :Period .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/wasCreatedInPlace
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/wasCreatedInPlace
 :wasCreatedInPlace rdf:type owl:ObjectProperty ;
                    rdfs:domain <https://w3id.org/icon/ontology/Artwork> ;
                    rdfs:range :Place .
@@ -120,7 +120,7 @@
 #    Data properties
 #################################################################
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/hasLabel
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/hasLabel
 :hasLabel rdf:type owl:DatatypeProperty .
 
 
@@ -128,146 +128,146 @@
 #    Classes
 #################################################################
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedCharacter
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/AlienRelatedCharacter
 :AlienRelatedCharacter rdf:type owl:Class ;
                        rdfs:subClassOf <https://w3id.org/icon/ontology/Character> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedConcept
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/AlienRelatedConcept
 :AlienRelatedConcept rdf:type owl:Class ;
                      rdfs:subClassOf :Concept .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienRelatedInterpretation
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/AlienRelatedInterpretation
 :AlienRelatedInterpretation rdf:type owl:Class ;
                             rdfs:subClassOf :Interpretation .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AlienTechnologicalObject
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/AlienTechnologicalObject
 :AlienTechnologicalObject rdf:type owl:Class ;
                           rdfs:subClassOf :RealWorldObject .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AncientTime
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/AncientTime
 :AncientTime rdf:type owl:Class ;
              rdfs:subClassOf :Period .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedConcept
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/AnthropocentrismRelatedConcept
 :AnthropocentrismRelatedConcept rdf:type owl:Class ;
                                 rdfs:subClassOf :Concept .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/AnthropocentrismRelatedInterpretation
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/AnthropocentrismRelatedInterpretation
 :AnthropocentrismRelatedInterpretation rdf:type owl:Class ;
                                        rdfs:subClassOf :Interpretation .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ArcheologyRelatedConcept
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/ArcheologyRelatedConcept
 :ArcheologyRelatedConcept rdf:type owl:Class ;
                           rdfs:subClassOf :AnthropocentrismRelatedConcept .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ArcheologyRelatedInterpretation
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/ArcheologyRelatedInterpretation
 :ArcheologyRelatedInterpretation rdf:type owl:Class ;
                                  rdfs:subClassOf :Interpretation .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ArtHistoryRelatedInterpretation
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/ArtHistoryRelatedInterpretation
 :ArtHistoryRelatedInterpretation rdf:type owl:Class ;
                                  rdfs:subClassOf :Interpretation .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Aspect
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Aspect
 :Aspect rdf:type owl:Class .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Color
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Color
 :Color rdf:type owl:Class ;
        rdfs:subClassOf :Aspect .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/CompositionOfAspects
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/CompositionOfAspects
 :CompositionOfAspects rdf:type owl:Class .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Concept
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Concept
 :Concept rdf:type owl:Class .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/CulturalContext
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/CulturalContext
 :CulturalContext rdf:type owl:Class .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/HistoricalArtworkInterpretation
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/HistoricalArtworkInterpretation
 :HistoricalArtworkInterpretation rdf:type owl:Class ;
                                  rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/HumanoidFigure
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/HumanoidFigure
 :HumanoidFigure rdf:type owl:Class ;
                 rdfs:subClassOf :RealWorldObject .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Interpretation
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Interpretation
 :Interpretation rdf:type owl:Class ;
                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ModernTime
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/ModernTime
 :ModernTime rdf:type owl:Class ;
             rdfs:subClassOf :Period .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/NegativeAttitude
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/NegativeAttitude
 :NegativeAttitude rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Object
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Object
 :Object rdf:type owl:Class .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/PerceptionRecognition
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/PerceptionRecognition
 :PerceptionRecognition rdf:type owl:Class ;
                        rdfs:subClassOf <https://w3id.org/icon/ontology/Recognition> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Period
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Period
 :Period rdf:type owl:Class .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Place
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Place
 :Place rdf:type owl:Class .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Position
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Position
 :Position rdf:type owl:Class ;
           rdfs:subClassOf :Aspect .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/PostiveAttitude
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/PostiveAttitude
 :PostiveAttitude rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/RealWorldObject
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/RealWorldObject
 :RealWorldObject rdf:type owl:Class ;
                  owl:equivalentClass <https://w3id.org/icon/ontology/NaturalElement> ;
                  rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ,
                                  <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ReligionRelatedCharacter
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/ReligionRelatedCharacter
 :ReligionRelatedCharacter rdf:type owl:Class .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ReligionRelatedConcept
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/ReligionRelatedConcept
 :ReligionRelatedConcept rdf:type owl:Class ;
                         rdfs:subClassOf :AnthropocentrismRelatedConcept .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ReligiousSymbol
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/ReligiousSymbol
 :ReligiousSymbol rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( :ReligionRelatedConcept
                                                             <https://w3id.org/icon/ontology/Symbol>
@@ -276,12 +276,12 @@
                                      ] .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Shape
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Shape
 :Shape rdf:type owl:Class ;
        rdfs:subClassOf :Aspect .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/Size
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/Size
 :Size rdf:type owl:Class ;
       rdfs:subClassOf :Aspect .
 
@@ -296,60 +296,60 @@
 #    Individuals
 #################################################################
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/archeologist_1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/archeologist_1
 :archeologist_1 rdf:type owl:NamedIndividual .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/artistic_motif_1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/artistic_motif_1
 :artistic_motif_1 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/icon/ontology/ArtisticMotif> ;
                   <https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf> :preicon_rec1 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/artistic_motif_2
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/artistic_motif_2
 :artistic_motif_2 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/icon/ontology/ArtisticMotif> ;
                   <https://w3id.org/icon/ontology/isRecAttributeOf> :image_1 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/artistic_motif_3
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/artistic_motif_3
 :artistic_motif_3 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/icon/ontology/ArtisticMotif> ;
                   <https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf> :preicon_rec2 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/artistic_motif_4
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/artistic_motif_4
 :artistic_motif_4 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/icon/ontology/ArtisticMotif> ;
                   <https://w3id.org/icon/ontology/isRecognizedArtisticMotifOf> :preicon_rec3 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/artistic_motif_5
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/artistic_motif_5
 :artistic_motif_5 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/icon/ontology/ArtisticMotif> ;
                   <https://w3id.org/icon/ontology/hasFactualMeaning> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/composition_1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/composition_1
 :composition_1 rdf:type owl:NamedIndividual ,
                         :CompositionOfAspects ;
                :makes <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#RoundObject> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/conspiracy_theorist_1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/conspiracy_theorist_1
 :conspiracy_theorist_1 rdf:type owl:NamedIndividual ,
                                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> ;
                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#creates> :interpretation_1 ,
                                                                                                        :interpretation_3 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/historical_artwork_interpretation
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/historical_artwork_interpretation
 :historical_artwork_interpretation rdf:type owl:NamedIndividual ,
                                             :HistoricalArtworkInterpretation ,
                                             <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/iconrec_1
 :iconrec_1 rdf:type owl:NamedIndividual ,
                     <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                     <https://w3id.org/icon/ontology/IconographicalRecognition> ;
@@ -359,7 +359,7 @@
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_2
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/iconrec_2
 :iconrec_2 rdf:type owl:NamedIndividual ,
                     <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                     <https://w3id.org/icon/ontology/IconographicalRecognition> ;
@@ -369,7 +369,7 @@
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/iconrec_3
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/iconrec_3
 :iconrec_3 rdf:type owl:NamedIndividual ,
                     <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                     <https://w3id.org/icon/ontology/IconographicalRecognition> ;
@@ -379,27 +379,27 @@
            <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/image_1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/image_1
 :image_1 rdf:type owl:NamedIndividual ,
                   <https://w3id.org/icon/ontology/Image> ;
          <https://w3id.org/icon/ontology/hasCharacter> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> ;
          <https://w3id.org/icon/ontology/isImageOf> :iconrec_3 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/image_2
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/image_2
 :image_2 rdf:type owl:NamedIndividual ,
                   <https://w3id.org/icon/ontology/Image> ;
          <https://w3id.org/icon/ontology/hasRecAttribute> :artistic_motif_5 ;
          <https://w3id.org/icon/ontology/isImageOf> :iconrec_1 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/image_3
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/image_3
 :image_3 rdf:type owl:NamedIndividual ,
                   <https://w3id.org/icon/ontology/Image> ;
          <https://w3id.org/icon/ontology/isImageOf> :iconrec_2 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/img_1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/img_1
 :img_1 rdf:type owl:NamedIndividual ,
                 <https://w3id.org/icon/ontology/Artwork> ;
        :hasCulturalContext <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#AboriginalTradition> ;
@@ -407,7 +407,7 @@
        :hasLabel "Petroglyphs in caves in the mountains of Kimberley Australia" .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/img_2
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/img_2
 :img_2 rdf:type owl:NamedIndividual ,
                 <https://w3id.org/icon/ontology/Artwork> ;
        :wasCreatedInPeriod <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#17thCenturyMural> ;
@@ -415,14 +415,14 @@
        :hasLabel "The Crucifixion of Christ" .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/img_3
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/img_3
 :img_3 rdf:type owl:NamedIndividual ,
                 <https://w3id.org/icon/ontology/Artwork> ;
-       :wasCreatedInPeriod <http://www.W3C.org/casaz/ontologies/2024/10/etvco/1338_A.D.> ;
+       :wasCreatedInPeriod <https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/1338_A.D.> ;
        :hasLabel "Le Livre Des Bonnes Moeurs" .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/interpretation_1
 :interpretation_1 rdf:type owl:NamedIndividual ,
                            :AlienRelatedInterpretation ,
                            :Interpretation ,
@@ -433,7 +433,7 @@
                   <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ufo_1> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_2
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/interpretation_2
 :interpretation_2 rdf:type owl:NamedIndividual ,
                            :ArtHistoryRelatedInterpretation ,
                            :Interpretation ,
@@ -441,7 +441,7 @@
                   :hasOutput :unknown_1 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_3
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/interpretation_3
 :interpretation_3 rdf:type owl:NamedIndividual ,
                            :AlienRelatedInterpretation ,
                            :Interpretation ,
@@ -450,7 +450,7 @@
                   <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> :ufo_2 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_4
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/interpretation_4
 :interpretation_4 rdf:type owl:NamedIndividual ,
                            :AlienRelatedInterpretation ,
                            :Interpretation ,
@@ -459,7 +459,7 @@
                   <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#humanoid_1> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_5
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/interpretation_5
 :interpretation_5 rdf:type owl:NamedIndividual ,
                            :AlienRelatedInterpretation ,
                            :Interpretation ,
@@ -470,7 +470,7 @@
                   <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#grey_1> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_6
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/interpretation_6
 :interpretation_6 rdf:type owl:NamedIndividual ,
                            :ArtHistoryRelatedInterpretation ,
                            :Interpretation ,
@@ -480,7 +480,7 @@
                   <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#angel_1> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/interpretation_7
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/interpretation_7
 :interpretation_7 rdf:type owl:NamedIndividual ,
                            :ArcheologyRelatedInterpretation ,
                            :Interpretation ;
@@ -489,19 +489,19 @@
                   <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough> <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#spirit_1> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/negative_attitude
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/negative_attitude
 :negative_attitude rdf:type owl:NamedIndividual ,
                             :NegativeAttitude ,
                             <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude> .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/object_2
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/object_2
 :object_2 rdf:type owl:NamedIndividual ,
                    :Object ;
           :hasInterpretation :interpretation_2 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/preicon_rec1
 :preicon_rec1 rdf:type owl:NamedIndividual ,
                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
@@ -511,7 +511,7 @@
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_2 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec2
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/preicon_rec2
 :preicon_rec2 rdf:type owl:NamedIndividual ,
                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
@@ -521,7 +521,7 @@
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_3 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec3
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/preicon_rec3
 :preicon_rec3 rdf:type owl:NamedIndividual ,
                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
@@ -529,7 +529,7 @@
               <https://w3id.org/icon/ontology/aboutWorkOfArt> :img_1 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/preicon_rec4
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/preicon_rec4
 :preicon_rec4 rdf:type owl:NamedIndividual ,
                        <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Perspectivisation> ,
                        <https://w3id.org/icon/ontology/PreiconographicalRecognition> ;
@@ -538,7 +538,7 @@
               <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut> :interpretation_2 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/ufo_2
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/ufo_2
 :ufo_2 rdf:type owl:NamedIndividual ,
                 :AlienTechnologicalObject ,
                 :RealWorldObject ,
@@ -547,15 +547,15 @@
        <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_3 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/unknown_1
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/unknown_1
 :unknown_1 rdf:type owl:NamedIndividual ,
                     :RealWorldObject ,
                     <https://w3id.org/icon/ontology/NaturalElement> ;
            <https://w3id.org/icon/ontology/isFactualMeaningOf> :artistic_motif_2 .
 
 
-###  http://www.W3C.org/casaz/ontologies/2024/10/etvco/1338_A.D.
-<http://www.W3C.org/casaz/ontologies/2024/10/etvco/1338_A.D.> rdf:type owl:NamedIndividual ,
+###  https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/1338_A.D.
+<https://raw.githubusercontent.com/knowledge-representation-2024/E.T-and-visual-culture-ontology-perspectives-on-Extraterrestrial-influence-in-visual-heritage-ETVCO-/refs/heads/main/etvcontology/1338_A.D.> rdf:type owl:NamedIndividual ,
                                                                        :ModernTime ,
                                                                        :Period .
 
